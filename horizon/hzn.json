@@ -1,0 +1,8 @@
+{
+    "HZN_ORG_ID": "mycluster",
+    "MetadataVars": {
+        "DOCKER_IMAGE_BASE": "default-route-openshift-image-registry.apps.ieam-demo.purple-chesterfield.com/prosegur-demo/mms_safety_model",
+        "SERVICE_NAME": "mms_safety_model",
+        "SERVICE_VERSION": "1.0.1"
+    }
+}

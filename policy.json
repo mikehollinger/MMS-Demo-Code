@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "openhorizon.hardwareId",
+      "value": "c91eaa4e806f8920574054e46cda4b00182f3bed"
+    },
+    {
+      "name": "openhorizon.cpu",
+      "value": 32
+    },
+    {
+      "name": "openhorizon.arch",
+      "value": "amd64"
+    },
+    {
+      "name": "openhorizon.memory",
+      "value": 128608
+    },
+    {
+      "name": "openhorizon.allowPrivileged",
+      "value": false
+    }
+  ]
+}

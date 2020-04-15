@@ -1,0 +1,6 @@
+{
+  "objectID": "safety_model_frcnn.zip", 
+  "objectType": "model",  
+  "destinationOrgID": "mycluster",
+  "destinationType": "mms_safety_model-amd64"  
+}

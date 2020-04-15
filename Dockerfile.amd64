@@ -1,0 +1,16 @@
+#FROM default-route-openshift-image-registry.apps.ieam-demo.purple-chesterfield.com/prosegur-demo/safety_model_amd64:1.0.0
+FROM ieam_dropin:latest
+
+# docker run --gpus all -p5001:5001 --name manualdropin -v `pwd`/dropins/safety_model_frcnn.zip:/config/dropins/model.zip -d ieam_dropin:latest python /opt/DNN/bin/deploy_zipped_model.pyc --gpu 0
+
+#COPY safety_model_frcnn.zip /config/dropins/safety_model_frcnn.zip
+COPY safety_model_frcnn_with_errors.zip /config/dropins/model.zip
+
+RUN apt-get update
+RUN apt-get install -y jq curl
+
+COPY *.sh /
+WORKDIR /
+CMD /service.sh   
+
+
